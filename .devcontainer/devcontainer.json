@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {},
+  "postCreateCommand": "npm install -g npm",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}u
