@@ -4,6 +4,9 @@
   "features": {},
   "postCreateCommand": "npm install -g npm",
   "forwardPorts": [3000],
+  "containerEnv": {
+    "CHOKIDAR_USEPOLLING": "true" // Docker/devcontainer環境でのHMR安定化
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,4 +15,4 @@
       ]
     }
   }
-}u
+}
