@@ -4,8 +4,14 @@
   </NuxtLayout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
-  title: "My App"
+  title: 'My App'
 })
 </script>
+
+<style>
+body {
+  margin: 0;
+}
+</style>

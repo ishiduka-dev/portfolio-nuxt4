@@ -1,0 +1,11 @@
+:root {
+  /* semantic */
+  --color-text: #e6f1ff;
+  --color-text-sub: #8aa0c8;
+  --color-bg: #070b14;
+
+  /* palette */
+  --color-neon-blue: #00eaff;
+  --color-neon-purple: #7a5cff;
+  --color-neon-pink: #ff2e88;
+}
