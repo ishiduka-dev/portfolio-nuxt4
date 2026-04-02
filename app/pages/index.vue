@@ -15,7 +15,7 @@ const videoIdList = [
         <HomeLatestRelease />
       </section>
       <section>
-        <UiSectionTitle title="Music Video" />
+        <UiSectionTitle title="MUSIC VIDEOS" />
         <ClientOnly>
           <div class="home__video-section">
             <UiYouTubePlayer
@@ -27,6 +27,10 @@ const videoIdList = [
             />
           </div>
         </ClientOnly>
+      </section>
+      <section>
+        <UiSectionTitle title="TOUR DATES" />
+        <HomeTourDate />
       </section>
     </div>
   </div>
