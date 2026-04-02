@@ -1,14 +1,32 @@
 <script setup lang="ts">
-import LatestRelease from '~/components/home/LatestRelease.vue'
+const videoIdList = [
+  { id: 'IcrbM1l_BoI', title: 'Wake Me Up' },
+  { id: 'cHHLHGNpCSA', title: 'Waiting For Love' },
+  { id: 'UtF6Jej8yb4', title: 'The Nights' }
+]
 </script>
 
 <template>
   <div class="home">
     <HomeHeroImage />
     <div class="home__info">
-      <section class="home__section">
+      <section>
         <UiSectionTitle title="LATEST RELEASE" />
-        <LatestRelease />
+        <HomeLatestRelease />
+      </section>
+      <section>
+        <UiSectionTitle title="Music Video" />
+        <ClientOnly>
+          <div class="home__video-section">
+            <UiYouTubePlayer
+              v-for="video in videoIdList"
+              :key="video.id"
+              :video-id="video.id"
+              :title="video.title"
+              class="home__video"
+            />
+          </div>
+        </ClientOnly>
       </section>
     </div>
   </div>
@@ -28,5 +46,11 @@ import LatestRelease from '~/components/home/LatestRelease.vue'
 
 .home__info > section {
   margin: 0 48px;
+  margin-bottom: 48px;
+}
+
+.home__video-section {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
