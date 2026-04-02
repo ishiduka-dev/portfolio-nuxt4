@@ -16,6 +16,14 @@ export default withNuxt({
       {
         script: { lang: 'ts' }
       }
+    ],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always'
+        }
+      }
     ]
   }
 })
