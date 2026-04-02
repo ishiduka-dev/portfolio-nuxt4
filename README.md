@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+# Portfolio Nuxt 3
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 環境構築
 
-## Setup
+### アプリ
 
-Make sure to install dependencies:
+- Docker Desktop
+- VS Code
 
-```bash
-# npm
-npm install
+### VS Code拡張機能
 
-# pnpm
-pnpm install
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-# yarn
-yarn install
+### 起動
 
-# bun
-bun install
-```
+1. Docker Desktop立ち上げ
+1. VS Code立ち上げ
+1. 本プロジェクトをVS Codeにワークスペースとして読み込み
+1. Ctrl + Shift + PでVS Codeのコマンドを探して実行
+
+   ```text
+   Dev Containers: Reopen in Container
+   ```
+
+1. コンテナ内のターミナルでnuxtを起動
+
+   ```bash
+   pnpm run dev
+   ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
 ## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
