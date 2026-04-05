@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+const { isSP } = useIsSP()
+
 const tourList = [
   { venue: 'TOKYO', date: 'May 14, 2026' },
   { venue: 'OSAKA', date: 'June 03, 2026' },
@@ -8,7 +16,23 @@ const tourList = [
 
 <template>
   <div class="tour">
-    <template v-for="(tour, index) in tourList" :key="tour.date">
+    <!-- SP: Swiper -->
+    <Swiper
+      v-if="isSP"
+      :slides-per-view="1"
+      :loop="true"
+      :modules="[Navigation]"
+      navigation
+    >
+      <SwiperSlide v-for="tour in tourList" :key="tour.date">
+        <div class="tour__info">
+          <p class="tour__venue">{{ tour.venue }}</p>
+          <p class="tour__date">{{ tour.date }}</p>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+
+    <template v-for="(tour, index) in tourList" v-else :key="tour.date">
       <div class="tour__info">
         <p class="tour__venue">{{ tour.venue }}</p>
         <p class="tour__date">{{ tour.date }}</p>

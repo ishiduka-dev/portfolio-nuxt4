@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+const { isSP } = useIsSP()
+
 const videoIdList = [
   { id: 'IcrbM1l_BoI', title: 'Wake Me Up' },
   { id: 'cHHLHGNpCSA', title: 'Waiting For Love' },
@@ -8,7 +16,21 @@ const videoIdList = [
 
 <template>
   <ClientOnly>
-    <div class="music-video">
+    <!-- SP: Swiper -->
+    <Swiper
+      v-if="isSP"
+      :slides-per-view="1"
+      :loop="true"
+      :modules="[Navigation]"
+      navigation
+    >
+      <SwiperSlide v-for="video in videoIdList" :key="video.id">
+        <UiYouTubePlayer :video-id="video.id" :title="video.title" />
+      </SwiperSlide>
+    </Swiper>
+
+    <!-- PC: Grid -->
+    <div v-else class="grid">
       <UiYouTubePlayer
         v-for="video in videoIdList"
         :key="video.id"
@@ -21,8 +43,18 @@ const videoIdList = [
 </template>
 
 <style lang="css" scoped>
-.music-video {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  height: 120px;
+  background: #222;
+  color: white;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 </style>
