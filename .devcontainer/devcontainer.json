@@ -9,7 +9,7 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["Vue.volar", "dbaeumer.vscode-eslint"]
+      "extensions": ["Vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
     }
   }
 }
