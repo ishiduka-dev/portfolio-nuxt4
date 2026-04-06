@@ -25,36 +25,30 @@ const videoIdList = [
       navigation
     >
       <SwiperSlide v-for="video in videoIdList" :key="video.id">
-        <UiYouTubePlayer :video-id="video.id" :title="video.title" />
+        <UiYouTubePlayer
+          :video-id="video.id"
+          :title="video.title"
+          class="music-video__content"
+        />
       </SwiperSlide>
     </Swiper>
 
     <!-- PC: Grid -->
-    <div v-else class="grid">
+    <div v-else class="music-video">
       <UiYouTubePlayer
         v-for="video in videoIdList"
         :key="video.id"
         :video-id="video.id"
         :title="video.title"
-        class="music-video__content"
       />
     </div>
   </ClientOnly>
 </template>
 
 <style lang="css" scoped>
-.grid {
+.music-video {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-}
-
-.card {
-  height: 120px;
-  background: #222;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>
