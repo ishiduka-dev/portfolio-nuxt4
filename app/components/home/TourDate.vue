@@ -5,7 +5,7 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
-const { isSP } = useIsSP()
+const { isTablet } = useBreakpoint()
 
 const tourList = [
   { venue: 'TOKYO', date: 'May 14, 2026' },
@@ -18,7 +18,7 @@ const tourList = [
   <div class="tour">
     <!-- SP: Swiper -->
     <Swiper
-      v-if="isSP"
+      v-if="isTablet"
       :slides-per-view="1"
       :loop="true"
       :modules="[Navigation]"

@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+@mixin sp {
+  @media (max-width: $breakpoint-sp) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}

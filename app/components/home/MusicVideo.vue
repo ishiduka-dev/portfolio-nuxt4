@@ -5,7 +5,7 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
-const { isSP } = useIsSP()
+const { isTablet } = useBreakpoint()
 
 const videoIdList = [
   { id: 'IcrbM1l_BoI', title: 'Wake Me Up' },
@@ -18,7 +18,7 @@ const videoIdList = [
   <ClientOnly>
     <!-- SP: Swiper -->
     <Swiper
-      v-if="isSP"
+      v-if="isTablet"
       :slides-per-view="1"
       :loop="true"
       :modules="[Navigation]"

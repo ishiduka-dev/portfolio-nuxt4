@@ -42,7 +42,7 @@ const close = () => {
   </header>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .header {
   position: relative;
   z-index: 100;
@@ -127,7 +127,7 @@ const close = () => {
   transform: translateX(100%);
 }
 
-@media (max-width: 768px) {
+@include sp {
   .header__menu-pc {
     display: none;
   }

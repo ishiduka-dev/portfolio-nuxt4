@@ -29,9 +29,10 @@ const musicList = [
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .release {
   display: flex;
+  gap: 24px;
 }
 
 .release > img {
@@ -40,7 +41,6 @@ const musicList = [
 }
 
 .release__info {
-  margin-left: 24px;
   width: 100%;
 }
 
@@ -74,5 +74,12 @@ const musicList = [
 
 .release__list-index {
   margin-right: 8px;
+}
+
+@include sp {
+  .release {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

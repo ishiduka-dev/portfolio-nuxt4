@@ -4,7 +4,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint'],
 
-  css: ['~/assets/css/theme.css'],
+  css: ['~/assets/css/theme.css', '~/assets/scss/main.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/mixins" as *;'
+        }
+      }
+    }
+  },
   app: {
     head: {
       link: [
