@@ -1,15 +1,20 @@
 {
   "name": "nuxt-dev",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
-  "features": {},
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "nuxt",
+  "workspaceFolder": "/workspaces",
   "postCreateCommand": "npm install -g pnpm && pnpm install --frozen-lockfile",
   "forwardPorts": [3000],
   "containerEnv": {
-    "CHOKIDAR_USEPOLLING": "true" // Docker/devcontainer環境でのHMR安定化
+    "CHOKIDAR_USEPOLLING": "true"
   },
   "customizations": {
     "vscode": {
-      "extensions": ["Vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+      "extensions": [
+        "Vue.volar",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
     }
   }
 }
