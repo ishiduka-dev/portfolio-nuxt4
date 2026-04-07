@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@typescript-eslint/parser':
-        specifier: ^8.58.0
-        version: 8.58.0(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       nuxt:
         specifier: ^4.4.2
         version: 4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.32)(cac@6.7.14)(db0@0.3.4)(eslint@10.2.0(jiti@2.6.1))(ioredis@5.10.1)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.1))(rollup@4.60.1)(sass@1.99.0)(srvx@0.11.15)(terser@5.46.1)(typescript@6.0.2)(vite@7.3.1(jiti@2.6.1)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))(yaml@2.8.3)
@@ -30,6 +27,9 @@ importers:
       '@nuxt/eslint':
         specifier: ^1.15.2
         version: 1.15.2(@typescript-eslint/utils@8.58.0(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.5.32)(eslint@10.2.0(jiti@2.6.1))(magicast@0.5.2)(typescript@6.0.2)(vite@7.3.1(jiti@2.6.1)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))
+      '@typescript-eslint/parser':
+        specifier: ^8.58.0
+        version: 8.58.0(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       eslint:
         specifier: ^10.1.0
         version: 10.2.0(jiti@2.6.1)
@@ -51,6 +51,9 @@ importers:
       sass:
         specifier: ^1.99.0
         version: 1.99.0
+      typescript:
+        specifier: ^6.0.2
+        version: 6.0.2
       vue-eslint-parser:
         specifier: ^10.4.0
         version: 10.4.0(eslint@10.2.0(jiti@2.6.1))
