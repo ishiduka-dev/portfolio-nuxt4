@@ -14,6 +14,15 @@
 - [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+### Githubのssh接続対応
+
+- MACの場合は少し修正をします
+- .devcountainer/devcountainer.json内のmountのsourceをlocalEnv:HOMEに修正してください
+
+```json
+"mounts": ["source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind"],
+```
+
 ### 起動
 
 1. Docker Desktop立ち上げ

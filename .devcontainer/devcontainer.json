@@ -8,6 +8,7 @@
   "containerEnv": {
     "CHOKIDAR_USEPOLLING": "true"
   },
+  "mounts": ["source=${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,type=bind"],
   "customizations": {
     "vscode": {
       "extensions": [
