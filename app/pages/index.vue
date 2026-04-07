@@ -2,11 +2,11 @@
   <div class="home">
     <HomeHeroImage />
     <div class="home__info">
-      <section>
+      <section id="latest-release">
         <UiSectionTitle title="LATEST RELEASE" />
         <HomeLatestRelease />
       </section>
-      <section>
+      <section id="music-video">
         <UiSectionTitle title="MUSIC VIDEOS" />
         <HomeMusicVideo />
       </section>

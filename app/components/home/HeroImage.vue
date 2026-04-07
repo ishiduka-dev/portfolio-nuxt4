@@ -6,8 +6,8 @@
       <span class="nowrap">From The City</span>
     </p>
     <div class="content-button">
-      <button>LISTEN NOW</button>
-      <button>WATCH VIDEO</button>
+      <a href="#latest-release">LISTEN NOW</a>
+      <a href="#music-video">WATCH VIDEO</a>
     </div>
   </div>
 </template>
@@ -71,8 +71,9 @@
   text-align: center;
 }
 
-.content-button > button {
+.content-button > a {
   margin: 12px;
+  text-decoration: none;
 
   border: 1px solid white;
 
