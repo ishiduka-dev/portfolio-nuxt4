@@ -1,5 +1,9 @@
 # Portfolio Nuxt 3
 
+## 本番環境
+
+https://portfolio-nuxt4-vercel-gkezuxfl8-ishidukadev-4215s-projects.vercel.app
+
 ## 環境構築
 
 ### アプリ
@@ -40,6 +44,25 @@
    pnpm run dev
    ```
 
-## Development Server
+## デプロイ
 
-## Production
+- Vercelでデプロイしているので、mainマージで自動デプロイされます
+
+## Git運用
+
+### 開発ブランチルール
+
+- GitHub Flowでいきます
+- mainとfeatureだけで
+  - main
+  - feature/hoge
+  - feature/huga
+
+### コミットコメント
+
+- prefixをつけます
+  - feat: ユーザに目に見えた機能の変更
+  - fix: バグの修正
+  - refactor: 挙動を変えない整理
+  - chore: その他雑用
+- ※以前のコミットでaddを使いまくっちゃってますけど、一旦気にしない
