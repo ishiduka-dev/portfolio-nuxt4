@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     host: '0.0.0.0',
     port: 3000
   },
+  ssr: true,
+  nitro: {
+    preset: 'static'
+  },
   modules: ['@nuxt/eslint'],
   css: ['~/assets/css/theme.css', '~/assets/scss/main.scss'],
   vite: {
