@@ -9,7 +9,7 @@ const musicList = [
 
 <template>
   <div class="release">
-    <img src="/images/latest_release.png" />
+    <img src="/images/latest_release.png" alt="New Release Signle Jacket" />
     <div class="release__info">
       <p class="release__title">MIDNIGHT SIGNALS</p>
       <div>

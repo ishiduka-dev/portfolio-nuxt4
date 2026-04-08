@@ -1,8 +1,8 @@
 # Portfolio Nuxt 3
 
-## 本番環境
+## 本番URL
 
-https://portfolio-nuxt4-vercel-gkezuxfl8-ishidukadev-4215s-projects.vercel.app
+https://portfolio-nuxt4-jet.vercel.app
 
 ## 環境構築
 
