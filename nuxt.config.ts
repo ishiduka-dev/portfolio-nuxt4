@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static'
   },
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@vueuse/nuxt'],
   css: ['~/assets/css/theme.css', '~/assets/scss/main.scss'],
   vite: {
     css: {
