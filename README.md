@@ -64,5 +64,5 @@ https://portfolio-nuxt4-jet.vercel.app
   - feat: ユーザに目に見えた機能の変更
   - fix: バグの修正
   - refactor: 挙動を変えない整理
-  - chore: その他雑用
+  - chore: 開発体験・環境・補助的変更・その他
 - ※以前のコミットでaddを使いまくっちゃってますけど、一旦気にしない

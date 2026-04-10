@@ -23,6 +23,7 @@ const close = () => {
       <div class="header__menu-pc">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/news">News</NuxtLink>
       </div>
 
       <button class="header__hamburger" @click="toggle">☰</button>
@@ -35,6 +36,7 @@ const close = () => {
       <nav v-show="isOpen" class="header__nav-sp">
         <NuxtLink to="/" @click="close">Home</NuxtLink>
         <NuxtLink to="/about" @click="close">About</NuxtLink>
+        <NuxtLink to="/news" @click="close">News</NuxtLink>
       </nav>
     </transition>
 

@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: Portfolio Nuxt4 API
+  version: 0.0.1
+
+paths:
+  /news-articles:
+    get:
+      summary: 記事一覧取得
+      parameters:
+        - name: page
+          in: query
+          description: ページ番号
+          required: false
+          schema:
+            type: integer
+            example: 1
+        - name: limit
+          in: query
+          description: 1ページあたりの件数
+          required: false
+          schema:
+            type: integer
+            example: 10
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/NewsArticle'
+                  meta:
+                    type: object
+                    properties:
+                      pagination:
+                        type: object
+                        properties:
+                          total:
+                            type: integer
+                            example: 100
+                          page:
+                            type: integer
+                            example: 1
+                          limit:
+                            type: integer
+                            example: 10
+                          totalPages:
+                            type: integer
+                            example: 10
+
+components:
+  schemas:
+    NewsArticle:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        title:
+          type: string
+          example: サンプル記事タイトル
+        body:
+          type: string
+          example: サンプル記事本文
+        image:
+          type: string
+          example: https://picsum.photos/768/432
+        announcedAt:
+          type: string
+          format: date-time
+          example: '2026-04-01T01:02:03+09:00'
+        createdAt:
+          type: string
+          format: date-time
+          example: '2026-04-01T01:02:03+09:00'
+        updatedAt:
+          type: string
+          format: date-time
+          example: '2026-04-01T01:02:03+09:00'
