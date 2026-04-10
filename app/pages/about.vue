@@ -7,6 +7,12 @@
         <p>ポートフォリオ用の架空のアーティストのページです</p>
       </section>
       <section>
+        <h2>Github</h2>
+        <a href="https://github.com/ishiduka-dev/portfolio-nuxt4"
+          >https://github.com/ishiduka-dev/portfolio-nuxt4</a
+        >
+      </section>
+      <section>
         <h2>デザイン</h2>
         <p>ChatGPTに架空のアーティストのページって頼み、デザインカンプを出力</p>
         <p>全部はやりませんが、要素を参考にしながら実装していきました</p>
@@ -14,12 +20,15 @@
         <img class="about-page__img" src="/images/design_comp.png" />
       </section>
       <section>
+        <h2>デプロイ</h2>
+        <p>Vercel Hobbyです</p>
+        <p>過度にアクセスがあった場合、止まるかも</p>
+      </section>
+      <section>
         <h2>TBD</h2>
         <ul>
-          <li>SEO対応</li>
-          <li>three.jsを使ってきらびやかに</li>
           <li>テストの仕組みの導入</li>
-          <li>nuxt/apiを使って何か</li>
+          <li>three.jsを使ってきらびやかに</li>
         </ul>
       </section>
     </div>
