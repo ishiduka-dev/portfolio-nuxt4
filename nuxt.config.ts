@@ -6,9 +6,8 @@ export default defineNuxtConfig({
     host: '0.0.0.0',
     port: 3000
   },
-  ssr: true,
   nitro: {
-    preset: 'static'
+    preset: 'vercel'
   },
   modules: ['@nuxt/eslint', '@vueuse/nuxt'],
   css: ['~/assets/css/theme.css', '~/assets/scss/main.scss'],
